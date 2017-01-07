@@ -19,7 +19,7 @@ def count_words(text):
 		word_counts[word] = word_counts.get(word, 0) + 1
 	return word_counts
 
-book_dir = "/Users/Admin/Desktop/workspaces/workspacePython/usingPythonForResearch/caseStudy2/Books"
+book_dir = "./Books"
 stats = pd.DataFrame(columns = ("language", "author", "title", "length", "unique"))
 title_num = 1
 for language in os.listdir(book_dir):
